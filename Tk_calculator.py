@@ -11,21 +11,13 @@ def showCal():
     new_gui.title("CALENDAR")
     new_gui.geometry("550x600")
     fetch_year = int(year_field.get())
-
-    # calendar method of calendar module return
-    # the calendar of the given year .
     cal_content = calendar.calendar(fetch_year)
-
-    # Create a label for showing the content of the calendar
     cal_year = Label(new_gui, text=cal_content, font="Consolas 10 bold")
-
-    # grid method is used for placing
-    # the widgets at respective positions
-    # in table like structure.
     cal_year.grid(row=5, column=1, padx=20)
 
     # start the GUI
     new_gui.mainloop()
+    print("AAAAAAAAAAAAAAA")
 
 
 # Driver Code
